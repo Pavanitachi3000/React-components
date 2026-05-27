@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: #0d0d0d;
+  color: #f0ede8;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.6;
+}
+
+.app { min-height: 100vh; display: flex; flex-direction: column; }
+.main { flex: 1; padding: 4rem 5%; max-width: 1200px; margin: 0 auto; width: 100%; }
+
+.page-title {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.page-tag {
+  display: inline-block;
+  background: rgba(232,197,71,0.12);
+  color: #e8c547;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; padding: 0.35rem 1rem;
+  border: 1px solid rgba(232,197,71,0.25);
+  margin-bottom: 1rem;
+}
+.page-title h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 900;
+  margin-bottom: 1rem;
+}
+.page-sub { color: #888; max-width: 480px; margin: 0 auto; }
+
+.demo-section { margin-bottom: 5rem; }
+.demo-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem; font-weight: 900;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.button-grid { display: flex; flex-direction: column; gap: 1.5rem; }
+.button-row {
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  padding: 1.5rem; background: #141414; border: 1px solid #1e1e1e;
+}
+.btn-group-label {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase; color: #555;
+  min-width: 70px;
+}
